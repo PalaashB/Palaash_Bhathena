@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description"
+          content="Palaash Bhathena — AI/ML Researcher, Semantic Search Engineer, and Computer Vision Developer. Portfolio showcasing projects in NLP, LLMs, and agentic systems.">
+     <meta name="author" content="Palaash Bhathena">
+     <title>Palaash Bhathena | The Semantic Explorer</title>
+
+     <!-- Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap"
+          rel="stylesheet">
+
+     <!-- Stylesheets -->
+     <link rel="stylesheet" href="css/reset.css">
+     <link rel="stylesheet" href="css/variables.css">
+     <link rel="stylesheet" href="css/main.css">
+     <link rel="stylesheet" href="css/nav.css">
+     <link rel="stylesheet" href="css/footer.css">
+     <link rel="stylesheet" href="css/hero.css">
+</head>
+
+<body>
+
+     <!-- ============================================
+       Neural Network Canvas (injected by JS later)
+       ============================================ -->
+     <canvas id="neural-canvas"></canvas>
+
+     <!-- ============================================
+       Navigation
+       ============================================ -->
+     <header id="site-header">
+          <nav class="nav glass" id="main-nav">
+               <a href="#" class="nav__logo">
+                    <span class="nav__logo-symbol">&lt;/&gt;</span>
+                    <span class="nav__logo-text">Palaash<span class="gradient-text">.dev</span></span>
+               </a>
+
+               <ul class="nav__links" id="nav-links">
+                    <li><a href="#about" class="nav__link" data-section="about">About</a></li>
+                    <li><a href="#experience" class="nav__link" data-section="experience">Experience</a></li>
+                    <li><a href="#projects" class="nav__link" data-section="projects">Projects</a></li>
+                    <li><a href="#skills" class="nav__link" data-section="skills">Skills</a></li>
+                    <li><a href="#contact" class="nav__link nav__link--cta" data-section="contact">Contact</a></li>
+               </ul>
+
+               <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                    <span class="nav__hamburger-line"></span>
+                    <span class="nav__hamburger-line"></span>
+                    <span class="nav__hamburger-line"></span>
+               </button>
+          </nav>
+     </header>
+
+     <!-- ============================================
+       Main Content
+       ============================================ -->
+     <main id="main-content">
+
+          <!-- Hero Section -->
+          <section id="about" class="hero">
+               <div class="hero__content">
+
+                    <!-- Status Badge -->
+                    <div class="hero__badge">
+                         <span class="hero__badge-dot"></span>
+                         <span class="hero__badge-text">UMass Amherst — CS '28</span>
+                    </div>
+
+                    <!-- Headline -->
+                    <h1 class="hero__title">
+                         <span class="hero__title-line">I'm <span class="gradient-text">Palaash Bhathena</span></span>
+                         <span class="hero__title-line hero__title-line--sub">The Semantic Explorer</span>
+                    </h1>
+
+                    <!-- Terminal Typing Animation -->
+                    <div class="hero__terminal">
+                         <div class="hero__terminal-bar">
+                              <span class="hero__terminal-dot" style="background:#ff5f57;"></span>
+                              <span class="hero__terminal-dot" style="background:#febc2e;"></span>
+                              <span class="hero__terminal-dot" style="background:#28c840;"></span>
+                              <span class="hero__terminal-label">explorer.sh</span>
+                         </div>
+                         <div class="hero__terminal-body">
+                              <span class="hero__terminal-prompt">$&gt;</span>
+                              <span class="hero__terminal-text" id="typing-text"></span>
+                              <span class="hero__terminal-cursor" id="typing-cursor">_</span>
+                         </div>
+                    </div>
+
+                    <!-- Description -->
+                    <p class="hero__description">
+                         Exploring the frontiers of <strong>AI/ML</strong>, <strong>Semantic Search</strong>, and
+                         <strong>Computer Vision</strong> — building intelligent systems that understand, reason, and
+                         connect.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="hero__actions">
+                         <a href="#projects" class="hero__btn hero__btn--primary">
+                              <span>View Projects</span>
+                              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                   stroke-width="2">
+                                   <path d="M7 17L17 7M17 7H7M17 7v10" />
+                              </svg>
+                         </a>
+                         <a href="#contact" class="hero__btn hero__btn--ghost">
+                              <span>Get In Touch</span>
+                         </a>
+                    </div>
+               </div>
+
+               <!-- Stats Bar -->
+               <div class="hero__stats">
+                    <div class="hero__stat">
+                         <span class="hero__stat-value gradient-text">3.83</span>
+                         <span class="hero__stat-label">GPA</span>
+                    </div>
+                    <div class="hero__stat-divider"></div>
+                    <div class="hero__stat">
+                         <span class="hero__stat-value gradient-text">4+</span>
+                         <span class="hero__stat-label">Projects</span>
+                    </div>
+                    <div class="hero__stat-divider"></div>
+                    <div class="hero__stat">
+                         <span class="hero__stat-value gradient-text">AI/ML</span>
+                         <span class="hero__stat-label">Focus</span>
+                    </div>
+               </div>
+
+               <!-- Scroll Indicator -->
+               <div class="hero__scroll">
+                    <div class="hero__scroll-line"></div>
+                    <span class="hero__scroll-text">Scroll to explore</span>
+               </div>
+          </section>
+
+
+          <!-- Experience Timeline (Commit 5) -->
+
+          <!-- Projects Bento Grid (Commit 6/7) -->
+
+          <!-- Skills Matrix (Commit 8) -->
+
+          <!-- Contact Section (Commit 9) -->
+
+     </main>
+
+     <!-- ============================================
+       Footer
+       ============================================ -->
+     <footer id="site-footer" class="footer">
+          <div class="footer__inner">
+
+               <div class="footer__top">
+                    <div class="footer__brand">
+                         <a href="#" class="footer__logo">
+                              <span class="nav__logo-symbol">&lt;/&gt;</span>
+                              <span class="nav__logo-text">Palaash<span class="gradient-text">.dev</span></span>
+                         </a>
+                         <p class="footer__tagline">Building intelligent systems at the intersection of AI, semantics,
+                              and engineering.</p>
+                    </div>
+
+                    <div class="footer__nav">
+                         <h4 class="footer__heading">Navigate</h4>
+                         <ul class="footer__links">
+                              <li><a href="#about">About</a></li>
+                              <li><a href="#experience">Experience</a></li>
+                              <li><a href="#projects">Projects</a></li>
+                              <li><a href="#skills">Skills</a></li>
+                              <li><a href="#contact">Contact</a></li>
+                         </ul>
+                    </div>
+
+                    <div class="footer__socials">
+                         <h4 class="footer__heading">Connect</h4>
+                         <ul class="footer__links">
+                              <li><a href="https://github.com/PalaashB" target="_blank"
+                                        rel="noopener noreferrer">GitHub</a></li>
+                              <li><a href="https://www.linkedin.com/in/palaash-bhathena/" target="_blank"
+                                        rel="noopener noreferrer">LinkedIn</a></li>
+                              <li><a href="mailto:pbhathena@umass.edu">Email</a></li>
+                         </ul>
+                    </div>
+               </div>
+
+               <div class="footer__divider"></div>
+
+               <div class="footer__bottom">
+                    <p class="footer__copyright">&copy; 2026 Palaash Bhathena. Crafted with precision.</p>
+                    <p class="footer__status">
+                         <span class="footer__status-dot"></span>
+                         Available for opportunities
+                    </p>
+               </div>
+
+          </div>
+     </footer>
+
+     <!-- Scripts -->
+     <script src="js/main.js" defer></script>
+</body>
+
+</html>

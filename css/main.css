@@ -1,0 +1,127 @@
+/* ================================================
+   Main Stylesheet — The Semantic Explorer
+   ================================================ */
+
+/* ── Base ───────────────────────────────────────── */
+body {
+    font-family: var(--font-sans);
+    font-size: var(--fs-base);
+    font-weight: var(--fw-regular);
+    line-height: var(--lh-normal);
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* ── Neural Canvas ─────────────────────────────── */
+#neural-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: var(--z-canvas);
+    pointer-events: none;
+}
+
+/* ── Main Content ──────────────────────────────── */
+#main-content {
+    position: relative;
+    z-index: var(--z-content);
+}
+
+/* ── Section Base ──────────────────────────────── */
+.section {
+    padding: var(--space-4xl) var(--space-lg);
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.section__header {
+    margin-bottom: var(--space-3xl);
+    text-align: center;
+}
+
+.section__label {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: var(--fs-xs);
+    font-weight: var(--fw-medium);
+    letter-spacing: var(--ls-wider);
+    text-transform: uppercase;
+    color: var(--neon-cyan);
+    background: var(--neon-cyan-dim);
+    padding: var(--space-2xs) var(--space-sm);
+    border-radius: var(--radius-full);
+    margin-bottom: var(--space-md);
+}
+
+.section__title {
+    font-size: var(--fs-3xl);
+    font-weight: var(--fw-bold);
+    line-height: var(--lh-tight);
+    letter-spacing: var(--ls-tight);
+    color: var(--text-primary);
+}
+
+.section__subtitle {
+    font-size: var(--fs-md);
+    color: var(--text-secondary);
+    margin-top: var(--space-sm);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ── Utility: Gradient Text ────────────────────── */
+.gradient-text {
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ── Utility: Glass Panel ──────────────────────── */
+.glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid var(--glass-border);
+}
+
+/* ── Utility: Neon Border ──────────────────────── */
+.neon-border {
+    border: 1px solid rgba(0, 240, 255, 0.12);
+    transition: border-color var(--duration-normal) var(--ease-out),
+        box-shadow var(--duration-normal) var(--ease-out);
+}
+
+.neon-border:hover {
+    border-color: rgba(0, 240, 255, 0.3);
+    box-shadow: var(--shadow-glow-cyan);
+}
+
+/* ── Utility: Screen-reader only ───────────────── */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* ── Selection ─────────────────────────────────── */
+::selection {
+    background: var(--neon-cyan-dim);
+    color: var(--text-primary);
+}
+
+::-moz-selection {
+    background: var(--neon-cyan-dim);
+    color: var(--text-primary);
+}
