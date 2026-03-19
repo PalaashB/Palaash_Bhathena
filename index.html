@@ -7,6 +7,14 @@
      <meta name="description"
           content="Palaash Bhathena — AI/ML Researcher, Semantic Search Engineer, and Computer Vision Developer. Portfolio showcasing projects in NLP, LLMs, and agentic systems.">
      <meta name="author" content="Palaash Bhathena">
+     <meta name="keywords"
+          content="Palaash Bhathena, AI, ML, Machine Learning, Computer Vision, Semantic Search, UMass Amherst, Portfolio, Developer">
+     <meta property="og:title" content="Palaash Bhathena | The Semantic Explorer">
+     <meta property="og:description"
+          content="AI/ML Researcher & Full-Stack Developer — Building intelligent systems that understand, reason, and connect.">
+     <meta property="og:type" content="website">
+     <meta name="twitter:card" content="summary_large_image">
+     <meta name="theme-color" content="#0a0e17">
      <title>Palaash Bhathena | The Semantic Explorer</title>
 
      <!-- Fonts -->
@@ -20,15 +28,17 @@
      <link rel="stylesheet" href="css/variables.css">
      <link rel="stylesheet" href="css/main.css">
      <link rel="stylesheet" href="css/nav.css">
-     <link rel="stylesheet" href="css/footer.css">
      <link rel="stylesheet" href="css/hero.css">
+     <link rel="stylesheet" href="css/timeline.css">
+     <link rel="stylesheet" href="css/projects.css">
+     <link rel="stylesheet" href="css/skills.css">
+     <link rel="stylesheet" href="css/contact.css">
+     <link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
 
-     <!-- ============================================
-       Neural Network Canvas (injected by JS later)
-       ============================================ -->
+     <!-- Neural Network Canvas -->
      <canvas id="neural-canvas"></canvas>
 
      <!-- ============================================
@@ -62,23 +72,19 @@
        ============================================ -->
      <main id="main-content">
 
-          <!-- Hero Section -->
+          <!-- ── Hero Section ────────────────────────── -->
           <section id="about" class="hero">
                <div class="hero__content">
-
-                    <!-- Status Badge -->
                     <div class="hero__badge">
                          <span class="hero__badge-dot"></span>
                          <span class="hero__badge-text">UMass Amherst — CS '28</span>
                     </div>
 
-                    <!-- Headline -->
                     <h1 class="hero__title">
                          <span class="hero__title-line">I'm <span class="gradient-text">Palaash Bhathena</span></span>
                          <span class="hero__title-line hero__title-line--sub">The Semantic Explorer</span>
                     </h1>
 
-                    <!-- Terminal Typing Animation -->
                     <div class="hero__terminal">
                          <div class="hero__terminal-bar">
                               <span class="hero__terminal-dot" style="background:#ff5f57;"></span>
@@ -93,14 +99,12 @@
                          </div>
                     </div>
 
-                    <!-- Description -->
                     <p class="hero__description">
                          Exploring the frontiers of <strong>AI/ML</strong>, <strong>Semantic Search</strong>, and
                          <strong>Computer Vision</strong> — building intelligent systems that understand, reason, and
                          connect.
                     </p>
 
-                    <!-- CTAs -->
                     <div class="hero__actions">
                          <a href="#projects" class="hero__btn hero__btn--primary">
                               <span>View Projects</span>
@@ -115,7 +119,6 @@
                     </div>
                </div>
 
-               <!-- Stats Bar -->
                <div class="hero__stats">
                     <div class="hero__stat">
                          <span class="hero__stat-value gradient-text">3.83</span>
@@ -133,21 +136,407 @@
                     </div>
                </div>
 
-               <!-- Scroll Indicator -->
                <div class="hero__scroll">
                     <div class="hero__scroll-line"></div>
                     <span class="hero__scroll-text">Scroll to explore</span>
                </div>
           </section>
 
+          <!-- ── Experience Timeline ─────────────────── -->
+          <section id="experience" class="section">
+               <div class="section__header">
+                    <span class="section__label">Experience</span>
+                    <h2 class="section__title">Where I've <span class="gradient-text">Contributed</span></h2>
+                    <p class="section__subtitle">Academic roles and leadership — building impact on campus and beyond.
+                    </p>
+               </div>
 
-          <!-- Experience Timeline (Commit 5) -->
+               <div class="timeline">
+                    <!-- Item 1: UCA -->
+                    <div class="timeline__item" data-animate>
+                         <div class="timeline__marker">
+                              <div class="timeline__dot"></div>
+                         </div>
+                         <div class="timeline__card glass neon-border">
+                              <div class="timeline__card-header">
+                                   <div>
+                                        <h3 class="timeline__role">Undergraduate Course Assistant</h3>
+                                        <p class="timeline__org">UMass Amherst — Manning CICS</p>
+                                   </div>
+                                   <span class="timeline__date">Jan 2025 — Present</span>
+                              </div>
+                              <ul class="timeline__details">
+                                   <li>Mentoring 200+ students in <strong>CS 220: Programming Methodologies</strong>,
+                                        reinforcing core concepts in data structures and algorithm design.</li>
+                                   <li>Conducting weekly office hours and code review sessions, helping students debug
+                                        complex assignments and build problem-solving intuition.</li>
+                                   <li>Collaborating with faculty to refine course materials, assignments, and grading
+                                        rubrics for clarity and academic rigor.</li>
+                              </ul>
+                              <div class="timeline__tags">
+                                   <span class="timeline__tag">Teaching</span>
+                                   <span class="timeline__tag">Data Structures</span>
+                                   <span class="timeline__tag">Mentorship</span>
+                              </div>
+                         </div>
+                    </div>
 
-          <!-- Projects Bento Grid (Commit 6/7) -->
+                    <!-- Item 2: Orientation Leader -->
+                    <div class="timeline__item" data-animate>
+                         <div class="timeline__marker">
+                              <div class="timeline__dot"></div>
+                         </div>
+                         <div class="timeline__card glass neon-border">
+                              <div class="timeline__card-header">
+                                   <div>
+                                        <h3 class="timeline__role">Orientation Leader</h3>
+                                        <p class="timeline__org">UMass Amherst — New Student Orientation</p>
+                                   </div>
+                                   <span class="timeline__date">May 2025 — Aug 2025</span>
+                              </div>
+                              <ul class="timeline__details">
+                                   <li>Guided incoming freshmen through campus resources, academic advising, and social
+                                        integration during orientation week.</li>
+                                   <li>Facilitated team-building activities and small-group sessions, fostering a
+                                        welcoming and inclusive environment.</li>
+                                   <li>Served as a first point of contact for new students, answering questions about
+                                        campus life, course registration, and student organizations.</li>
+                              </ul>
+                              <div class="timeline__tags">
+                                   <span class="timeline__tag">Leadership</span>
+                                   <span class="timeline__tag">Communication</span>
+                                   <span class="timeline__tag">Community</span>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
 
-          <!-- Skills Matrix (Commit 8) -->
+          <!-- ── Projects Bento Grid ─────────────────── -->
+          <section id="projects" class="section">
+               <div class="section__header">
+                    <span class="section__label">Projects</span>
+                    <h2 class="section__title">What I've <span class="gradient-text">Built</span></h2>
+                    <p class="section__subtitle">End-to-end systems spanning AI agents, semantic search, and computer
+                         vision.</p>
+               </div>
 
-          <!-- Contact Section (Commit 9) -->
+               <div class="bento">
+                    <!-- Project 1: Agentic Grant Scout — Large Card -->
+                    <div class="bento__card bento__card--lg glass neon-border" data-project="grant-scout" data-animate>
+                         <div class="bento__card-inner">
+                              <div class="bento__icon">
+                                   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--neon-cyan)"
+                                        stroke-width="1.5">
+                                        <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                   </svg>
+                              </div>
+                              <h3 class="bento__title">Agentic Grant Scout</h3>
+                              <p class="bento__desc">AI-powered research grant discovery platform using multi-agent
+                                   architecture, Gemini API for intelligent keyword extraction, and concurrent web
+                                   scraping of federal databases.</p>
+                              <div class="bento__tags">
+                                   <span>React</span><span>PHP</span><span>Gemini API</span><span>cURL Multi</span>
+                              </div>
+                              <div class="bento__overlay">
+                                   <h4>Technical Deep Dive</h4>
+                                   <ul>
+                                        <li>Multi-agent pipeline: PDF parsing → AI keyword extraction → concurrent grant
+                                             searching → AI relevance scoring</li>
+                                        <li>Built with React frontend and PHP 8.x backend for cPanel shared-hosting
+                                             compatibility</li>
+                                        <li>Uses <code>curl_multi_init</code> for parallel requests to grants.gov, NSF,
+                                             and NIH APIs</li>
+                                        <li>Gemini-powered scoring engine evaluates grant-to-research alignment with
+                                             semantic analysis</li>
+                                   </ul>
+                                   <div class="bento__overlay-links">
+                                        <a href="https://github.com/PalaashB" target="_blank" rel="noopener noreferrer"
+                                             class="bento__overlay-btn">View Code →</a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <!-- Project 2: Echo-Locator -->
+                    <div class="bento__card glass neon-border" data-project="echo-locator" data-animate>
+                         <div class="bento__card-inner">
+                              <div class="bento__icon">
+                                   <svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                                        stroke="var(--neon-violet)" stroke-width="1.5">
+                                        <path
+                                             d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                                   </svg>
+                              </div>
+                              <h3 class="bento__title">Echo-Locator</h3>
+                              <p class="bento__desc">Multimodal search engine combining CLIP embeddings and OpenAI for
+                                   natural-language image and video retrieval across large datasets.</p>
+                              <div class="bento__tags">
+                                   <span>Python</span><span>CLIP</span><span>OpenAI</span><span>OpenCV</span>
+                              </div>
+                              <div class="bento__overlay">
+                                   <h4>Technical Deep Dive</h4>
+                                   <ul>
+                                        <li>Leverages OpenAI's CLIP model for zero-shot image-text alignment</li>
+                                        <li>Indexes video frames with temporal segmentation for scene-level retrieval
+                                        </li>
+                                        <li>Built custom vector similarity pipeline using cosine distance ranking</li>
+                                        <li>Gradio-based interface for real-time natural language queries</li>
+                                   </ul>
+                                   <div class="bento__overlay-links">
+                                        <a href="https://github.com/PalaashB" target="_blank" rel="noopener noreferrer"
+                                             class="bento__overlay-btn">View Code →</a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <!-- Project 3: Semantic LLM Cache -->
+                    <div class="bento__card glass neon-border" data-project="llm-cache" data-animate>
+                         <div class="bento__card-inner">
+                              <div class="bento__icon">
+                                   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--neon-cyan)"
+                                        stroke-width="1.5">
+                                        <path d="M4 7v10c0 2 1 3 3 3h10c2 0 3-1 3-3V7c0-2-1-3-3-3H7C5 4 4 5 4 7z" />
+                                        <path d="M9 12h6M12 9v6" />
+                                   </svg>
+                              </div>
+                              <h3 class="bento__title">Semantic LLM Cache</h3>
+                              <p class="bento__desc">Intelligent caching layer for LLM APIs using sentence embeddings to
+                                   detect semantically similar queries and return cached responses.</p>
+                              <div class="bento__tags">
+                                   <span>Python</span><span>SentenceTransformers</span><span>FAISS</span><span>LLM</span>
+                              </div>
+                              <div class="bento__overlay">
+                                   <h4>Technical Deep Dive</h4>
+                                   <ul>
+                                        <li>Uses SentenceTransformers to encode queries into dense vector
+                                             representations</li>
+                                        <li>FAISS index provides sub-millisecond nearest-neighbor lookup for cache hits
+                                        </li>
+                                        <li>Configurable similarity threshold controls cache precision vs. recall
+                                             trade-off</li>
+                                        <li>Reduces API costs by up to 40% on repeated or paraphrased queries</li>
+                                   </ul>
+                                   <div class="bento__overlay-links">
+                                        <a href="https://github.com/PalaashB" target="_blank" rel="noopener noreferrer"
+                                             class="bento__overlay-btn">View Code →</a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <!-- Project 4: Neural Portfolio (Meta) -->
+                    <div class="bento__card glass neon-border" data-project="portfolio" data-animate>
+                         <div class="bento__card-inner">
+                              <div class="bento__icon">
+                                   <svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                                        stroke="var(--neon-violet)" stroke-width="1.5">
+                                        <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                   </svg>
+                              </div>
+                              <h3 class="bento__title">This Portfolio</h3>
+                              <p class="bento__desc">Hand-coded neural dashboard with Canvas particle physics,
+                                   glassmorphism UI, and zero dependencies — pure HTML5, CSS3, and JavaScript.</p>
+                              <div class="bento__tags">
+                                   <span>HTML5</span><span>CSS3</span><span>Canvas API</span><span>Vanilla JS</span>
+                              </div>
+                              <div class="bento__overlay">
+                                   <h4>Technical Deep Dive</h4>
+                                   <ul>
+                                        <li>Interactive neural network canvas with proximity-based edge rendering</li>
+                                        <li>Glassmorphism design system with CSS custom properties</li>
+                                        <li>IntersectionObserver-powered scroll animations and section tracking</li>
+                                        <li>Fully responsive bento grid with CSS Grid and zero JS frameworks</li>
+                                   </ul>
+                                   <div class="bento__overlay-links">
+                                        <a href="https://github.com/PalaashB" target="_blank" rel="noopener noreferrer"
+                                             class="bento__overlay-btn">View Code →</a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+
+          <!-- ── Skills Matrix ───────────────────────── -->
+          <section id="skills" class="section">
+               <div class="section__header">
+                    <span class="section__label">Tech Stack</span>
+                    <h2 class="section__title">Skills & <span class="gradient-text">Tools</span></h2>
+                    <p class="section__subtitle">Technologies I use to build intelligent systems.</p>
+               </div>
+
+               <div class="skills">
+                    <!-- Languages -->
+                    <div class="skills__group" data-animate>
+                         <h3 class="skills__group-title">
+                              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--neon-cyan)"
+                                   stroke-width="2">
+                                   <path d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
+                              </svg>
+                              Languages
+                         </h3>
+                         <div class="skills__grid">
+                              <div class="skills__item glass neon-border"><span>Python</span></div>
+                              <div class="skills__item glass neon-border"><span>Java</span></div>
+                              <div class="skills__item glass neon-border"><span>JavaScript</span></div>
+                              <div class="skills__item glass neon-border"><span>TypeScript</span></div>
+                              <div class="skills__item glass neon-border"><span>C</span></div>
+                              <div class="skills__item glass neon-border"><span>PHP</span></div>
+                              <div class="skills__item glass neon-border"><span>HTML/CSS</span></div>
+                              <div class="skills__item glass neon-border"><span>SQL</span></div>
+                         </div>
+                    </div>
+
+                    <!-- Frameworks & Libraries -->
+                    <div class="skills__group" data-animate>
+                         <h3 class="skills__group-title">
+                              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--neon-violet)"
+                                   stroke-width="2">
+                                   <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                              </svg>
+                              Frameworks & Libraries
+                         </h3>
+                         <div class="skills__grid">
+                              <div class="skills__item glass neon-border"><span>PyTorch</span></div>
+                              <div class="skills__item glass neon-border"><span>Hugging Face</span></div>
+                              <div class="skills__item glass neon-border"><span>SentenceTransformers</span></div>
+                              <div class="skills__item glass neon-border"><span>scikit-learn</span></div>
+                              <div class="skills__item glass neon-border"><span>OpenCV</span></div>
+                              <div class="skills__item glass neon-border"><span>React</span></div>
+                              <div class="skills__item glass neon-border"><span>NumPy</span></div>
+                              <div class="skills__item glass neon-border"><span>Gradio</span></div>
+                              <div class="skills__item glass neon-border"><span>Tailwind CSS</span></div>
+                         </div>
+                    </div>
+
+                    <!-- Developer Tools -->
+                    <div class="skills__group" data-animate>
+                         <h3 class="skills__group-title">
+                              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--neon-cyan)"
+                                   stroke-width="2">
+                                   <path
+                                        d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" />
+                              </svg>
+                              Developer Tools
+                         </h3>
+                         <div class="skills__grid">
+                              <div class="skills__item glass neon-border"><span>Git</span></div>
+                              <div class="skills__item glass neon-border"><span>GitHub</span></div>
+                              <div class="skills__item glass neon-border"><span>Linux/Unix</span></div>
+                              <div class="skills__item glass neon-border"><span>VS Code</span></div>
+                              <div class="skills__item glass neon-border"><span>Jupyter</span></div>
+                         </div>
+                    </div>
+
+                    <!-- Certifications -->
+                    <div class="skills__group" data-animate>
+                         <h3 class="skills__group-title">
+                              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--neon-violet)"
+                                   stroke-width="2">
+                                   <path d="M12 15l-2 5 2-1 2 1-2-5zM9 12a3 3 0 106 0 3 3 0 00-6 0z" />
+                                   <circle cx="12" cy="12" r="10" />
+                              </svg>
+                              Certifications
+                         </h3>
+                         <div class="skills__grid">
+                              <div class="skills__item skills__item--cert glass neon-border">
+                                   <span>Practical Offensive Hacking</span>
+                                   <small>IIT, 2023</small>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+
+          <!-- ── Contact Section ─────────────────────── -->
+          <section id="contact" class="section">
+               <div class="section__header">
+                    <span class="section__label">Contact</span>
+                    <h2 class="section__title">Let's <span class="gradient-text">Connect</span></h2>
+                    <p class="section__subtitle">Have a project idea, research opportunity, or just want to chat? Reach
+                         out.</p>
+               </div>
+
+               <div class="contact">
+                    <form class="contact__form glass neon-border" id="contact-form" action="mailto:pbhathena@umass.edu"
+                         method="POST" enctype="text/plain">
+                         <div class="contact__field">
+                              <label for="contact-name" class="contact__label">Name</label>
+                              <input type="text" id="contact-name" name="name" class="contact__input"
+                                   placeholder="Your name" required autocomplete="name">
+                         </div>
+                         <div class="contact__field">
+                              <label for="contact-email" class="contact__label">Email</label>
+                              <input type="email" id="contact-email" name="email" class="contact__input"
+                                   placeholder="your@email.com" required autocomplete="email">
+                         </div>
+                         <div class="contact__field contact__field--full">
+                              <label for="contact-message" class="contact__label">Message</label>
+                              <textarea id="contact-message" name="message" class="contact__input contact__textarea"
+                                   placeholder="Tell me about your project or opportunity..." rows="5"
+                                   required></textarea>
+                         </div>
+                         <button type="submit" class="contact__submit">
+                              <span>Send Message</span>
+                              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                   stroke-width="2">
+                                   <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+                              </svg>
+                         </button>
+                    </form>
+
+                    <div class="contact__info">
+                         <div class="contact__info-card glass neon-border">
+                              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--neon-cyan)"
+                                   stroke-width="1.5">
+                                   <path
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                              </svg>
+                              <div>
+                                   <h4>Email</h4>
+                                   <a href="mailto:pbhathena@umass.edu">pbhathena@umass.edu</a>
+                              </div>
+                         </div>
+                         <div class="contact__info-card glass neon-border">
+                              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--neon-violet)"
+                                   stroke-width="1.5">
+                                   <path
+                                        d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z" />
+                              </svg>
+                              <div>
+                                   <h4>LinkedIn</h4>
+                                   <a href="https://www.linkedin.com/in/palaash-bhathena/" target="_blank"
+                                        rel="noopener noreferrer">palaash-bhathena</a>
+                              </div>
+                         </div>
+                         <div class="contact__info-card glass neon-border">
+                              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--neon-cyan)"
+                                   stroke-width="1.5">
+                                   <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                              </svg>
+                              <div>
+                                   <h4>GitHub</h4>
+                                   <a href="https://github.com/PalaashB" target="_blank"
+                                        rel="noopener noreferrer">PalaashB</a>
+                              </div>
+                         </div>
+                         <div class="contact__info-card glass neon-border">
+                              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--neon-violet)"
+                                   stroke-width="1.5">
+                                   <path
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                              </svg>
+                              <div>
+                                   <h4>Phone</h4>
+                                   <a href="tel:+14133151050">413-315-1050</a>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
 
      </main>
 
@@ -156,7 +545,6 @@
        ============================================ -->
      <footer id="site-footer" class="footer">
           <div class="footer__inner">
-
                <div class="footer__top">
                     <div class="footer__brand">
                          <a href="#" class="footer__logo">
@@ -166,7 +554,6 @@
                          <p class="footer__tagline">Building intelligent systems at the intersection of AI, semantics,
                               and engineering.</p>
                     </div>
-
                     <div class="footer__nav">
                          <h4 class="footer__heading">Navigate</h4>
                          <ul class="footer__links">
@@ -177,7 +564,6 @@
                               <li><a href="#contact">Contact</a></li>
                          </ul>
                     </div>
-
                     <div class="footer__socials">
                          <h4 class="footer__heading">Connect</h4>
                          <ul class="footer__links">
@@ -189,9 +575,7 @@
                          </ul>
                     </div>
                </div>
-
                <div class="footer__divider"></div>
-
                <div class="footer__bottom">
                     <p class="footer__copyright">&copy; 2026 Palaash Bhathena. Crafted with precision.</p>
                     <p class="footer__status">
@@ -199,9 +583,21 @@
                          Available for opportunities
                     </p>
                </div>
-
           </div>
      </footer>
+
+     <!-- Project Modal -->
+     <div class="modal" id="project-modal" aria-hidden="true">
+          <div class="modal__backdrop"></div>
+          <div class="modal__content glass">
+               <button class="modal__close" id="modal-close" aria-label="Close modal">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                         <path d="M18 6L6 18M6 6l12 12" />
+                    </svg>
+               </button>
+               <div class="modal__body" id="modal-body"></div>
+          </div>
+     </div>
 
      <!-- Scripts -->
      <script src="js/main.js" defer></script>
