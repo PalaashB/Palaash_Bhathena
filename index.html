@@ -160,23 +160,23 @@
                          <div class="timeline__card glass neon-border">
                               <div class="timeline__card-header">
                                    <div>
-                                        <h3 class="timeline__role">Undergraduate Course Assistant</h3>
-                                        <p class="timeline__org">UMass Amherst — Manning CICS</p>
+                                        <h3 class="timeline__role">Undergraduate Course Assistant (UCA) — CS 240</h3>
+                                        <p class="timeline__org">Manning College of CICS, UMass Amherst</p>
                                    </div>
-                                   <span class="timeline__date">Jan 2025 — Present</span>
+                                   <span class="timeline__date">Jan 2026 — Present</span>
                               </div>
                               <ul class="timeline__details">
-                                   <li>Mentoring 200+ students in <strong>CS 220: Programming Methodologies</strong>,
-                                        reinforcing core concepts in data structures and algorithm design.</li>
-                                   <li>Conducting weekly office hours and code review sessions, helping students debug
-                                        complex assignments and build problem-solving intuition.</li>
-                                   <li>Collaborating with faculty to refine course materials, assignments, and grading
-                                        rubrics for clarity and academic rigor.</li>
+                                   <li>Led discussion sessions and office hours for 250+ students in <strong>CS
+                                             240</strong>,
+                                        reinforcing Bayesian Networks, Markov Chains, and statistical inference through
+                                        structured problem-solving exercises.</li>
+                                   <li>Evaluated 500+ student submissions across full grading cycles spanning homework,
+                                        quizzes, and exams covering probability theory and Bayesian inference.</li>
                               </ul>
                               <div class="timeline__tags">
                                    <span class="timeline__tag">Teaching</span>
-                                   <span class="timeline__tag">Data Structures</span>
-                                   <span class="timeline__tag">Mentorship</span>
+                                   <span class="timeline__tag">Probability</span>
+                                   <span class="timeline__tag">Bayesian Inference</span>
                               </div>
                          </div>
                     </div>
@@ -190,22 +190,49 @@
                               <div class="timeline__card-header">
                                    <div>
                                         <h3 class="timeline__role">Orientation Leader</h3>
-                                        <p class="timeline__org">UMass Amherst — New Student Orientation</p>
+                                        <p class="timeline__org">New Student and Family Programs, UMass Amherst</p>
                                    </div>
-                                   <span class="timeline__date">May 2025 — Aug 2025</span>
+                                   <span class="timeline__date">May 2025 — Sep 2025</span>
                               </div>
                               <ul class="timeline__details">
-                                   <li>Guided incoming freshmen through campus resources, academic advising, and social
-                                        integration during orientation week.</li>
-                                   <li>Facilitated team-building activities and small-group sessions, fostering a
-                                        welcoming and inclusive environment.</li>
-                                   <li>Served as a first point of contact for new students, answering questions about
-                                        campus life, course registration, and student organizations.</li>
+                                   <li>Guided 6,300+ incoming students and 2,500 family members through multi-day
+                                        orientation programming across a high-volume summer session.</li>
+                                   <li>Led diverse groups through structured activities and time-sensitive conflict
+                                        resolution, managing competing priorities across simultaneous sessions.</li>
                               </ul>
                               <div class="timeline__tags">
                                    <span class="timeline__tag">Leadership</span>
                                    <span class="timeline__tag">Communication</span>
                                    <span class="timeline__tag">Community</span>
+                              </div>
+                         </div>
+                    </div>
+
+                    <!-- Item 3: Intern Programmer -->
+                    <div class="timeline__item" data-animate>
+                         <div class="timeline__marker">
+                              <div class="timeline__dot"></div>
+                         </div>
+                         <div class="timeline__card glass neon-border">
+                              <div class="timeline__card-header">
+                                   <div>
+                                        <h3 class="timeline__role">Intern Programmer</h3>
+                                        <p class="timeline__org">Comely Enterprise, Mumbai, India</p>
+                                   </div>
+                                   <span class="timeline__date">May 2023 — Jul 2023</span>
+                              </div>
+                              <ul class="timeline__details">
+                                   <li>Developed core game logic and collision systems for 3 platformer titles in
+                                        Construct 3, extending gameplay behaviors with custom JavaScript to reduce
+                                        average bug resolution time by 30%.</li>
+                                   <li>Integrated sprite animations and graphical assets across multiple game builds,
+                                        maintaining consistent cross-platform performance on both desktop and mobile
+                                        targets.</li>
+                              </ul>
+                              <div class="timeline__tags">
+                                   <span class="timeline__tag">JavaScript</span>
+                                   <span class="timeline__tag">Game Development</span>
+                                   <span class="timeline__tag">Construct 3</span>
                               </div>
                          </div>
                     </div>
@@ -232,23 +259,24 @@
                                    </svg>
                               </div>
                               <h3 class="bento__title">Agentic Grant Scout</h3>
-                              <p class="bento__desc">AI-powered research grant discovery platform using multi-agent
-                                   architecture, Gemini API for intelligent keyword extraction, and concurrent web
-                                   scraping of federal databases.</p>
+                              <p class="bento__desc">Full-stack semantic search app adopted by the UMass Amherst
+                                   Chemistry department as their primary federal grant discovery tool, built on a
+                                   React + PHP 8 + MySQL production stack.</p>
                               <div class="bento__tags">
-                                   <span>React</span><span>PHP</span><span>Gemini API</span><span>cURL Multi</span>
+                                   <span>React</span><span>PHP 8</span><span>MySQL</span><span>Gemini
+                                        API</span><span>Tailwind CSS</span>
                               </div>
                               <div class="bento__overlay">
                                    <h4>Technical Deep Dive</h4>
                                    <ul>
-                                        <li>Multi-agent pipeline: PDF parsing → AI keyword extraction → concurrent grant
-                                             searching → AI relevance scoring</li>
-                                        <li>Built with React frontend and PHP 8.x backend for cPanel shared-hosting
-                                             compatibility</li>
-                                        <li>Uses <code>curl_multi_init</code> for parallel requests to grants.gov, NSF,
-                                             and NIH APIs</li>
-                                        <li>Gemini-powered scoring engine evaluates grant-to-research alignment with
-                                             semantic analysis</li>
+                                        <li>Automated nightly ingestion of 500+ federal grants via the Grants.gov API,
+                                             generating Gemini-powered embeddings stored in MySQL for cosine
+                                             similarity-based retrieval</li>
+                                        <li>Built a two-stage ranking pipeline: cosine similarity filtering → Gemini LLM
+                                             re-ranking of top 15 results scoring research alignment, eligibility, and
+                                             career stage per faculty CV upload</li>
+                                        <li>Deployed on a React + PHP 8 + MySQL production stack with Tailwind CSS
+                                             frontend</li>
                                    </ul>
                                    <div class="bento__overlay-links">
                                         <a href="https://github.com/PalaashB" target="_blank" rel="noopener noreferrer"
@@ -269,19 +297,23 @@
                                    </svg>
                               </div>
                               <h3 class="bento__title">Echo-Locator</h3>
-                              <p class="bento__desc">Multimodal search engine combining CLIP embeddings and OpenAI for
-                                   natural-language image and video retrieval across large datasets.</p>
+                              <p class="bento__desc">Cross-modal semantic search engine using OpenAI CLIP to project
+                                   lost-item images and natural language queries into a unified vector space,
+                                   enabling description-based photo retrieval without keyword matching.</p>
                               <div class="bento__tags">
-                                   <span>Python</span><span>CLIP</span><span>OpenAI</span><span>OpenCV</span>
+                                   <span>Python</span><span>CLIP (OpenAI)</span><span>React</span><span>SQLite</span>
                               </div>
                               <div class="bento__overlay">
                                    <h4>Technical Deep Dive</h4>
                                    <ul>
-                                        <li>Leverages OpenAI's CLIP model for zero-shot image-text alignment</li>
-                                        <li>Indexes video frames with temporal segmentation for scene-level retrieval
+                                        <li>Architected a cross-modal semantic search engine using OpenAI CLIP to
+                                             project
+                                             images and text into a unified vector space</li>
+                                        <li>Designed and shipped a full-stack lost-and-found platform (CLIP embedding
+                                             pipeline, SQLite vector store, React frontend) as a 2-person team in 36
+                                             hours</li>
+                                        <li>Targets UMass's fragmented building-level lost-item recovery infrastructure
                                         </li>
-                                        <li>Built custom vector similarity pipeline using cosine distance ranking</li>
-                                        <li>Gradio-based interface for real-time natural language queries</li>
                                    </ul>
                                    <div class="bento__overlay-links">
                                         <a href="https://github.com/PalaashB" target="_blank" rel="noopener noreferrer"
@@ -302,21 +334,21 @@
                                    </svg>
                               </div>
                               <h3 class="bento__title">Semantic LLM Cache</h3>
-                              <p class="bento__desc">Intelligent caching layer for LLM APIs using sentence embeddings to
-                                   detect semantically similar queries and return cached responses.</p>
+                              <p class="bento__desc">Semantic caching layer for DistilGPT-2 using SentenceTransformers
+                                   embeddings, returning cached responses for any query exceeding an 80% cosine
+                                   similarity threshold.</p>
                               <div class="bento__tags">
-                                   <span>Python</span><span>SentenceTransformers</span><span>FAISS</span><span>LLM</span>
+                                   <span>Python</span><span>SentenceTransformers</span><span>SQLite</span><span>NumPy</span>
                               </div>
                               <div class="bento__overlay">
                                    <h4>Technical Deep Dive</h4>
                                    <ul>
                                         <li>Uses SentenceTransformers to encode queries into dense vector
-                                             representations</li>
-                                        <li>FAISS index provides sub-millisecond nearest-neighbor lookup for cache hits
-                                        </li>
-                                        <li>Configurable similarity threshold controls cache precision vs. recall
-                                             trade-off</li>
-                                        <li>Reduces API costs by up to 40% on repeated or paraphrased queries</li>
+                                             representations with 80% cosine similarity threshold</li>
+                                        <li>Cut average response time by ~95% (2.0s → &lt;0.1s) by serving matches
+                                             from a SQLite vector store, bypassing full model inference</li>
+                                        <li>SQLite-backed vector store for lightweight, dependency-free cache
+                                             persistence</li>
                                    </ul>
                                    <div class="bento__overlay-links">
                                         <a href="https://github.com/PalaashB" target="_blank" rel="noopener noreferrer"
@@ -326,8 +358,8 @@
                          </div>
                     </div>
 
-                    <!-- Project 4: Neural Portfolio (Meta) -->
-                    <div class="bento__card glass neon-border" data-project="portfolio" data-animate>
+                    <!-- Project 4: Campus LLM Fine-Tuning -->
+                    <div class="bento__card glass neon-border" data-project="campus-llm" data-animate>
                          <div class="bento__card-inner">
                               <div class="bento__icon">
                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none"
@@ -335,19 +367,21 @@
                                         <path d="M13 10V3L4 14h7v7l9-11h-7z" />
                                    </svg>
                               </div>
-                              <h3 class="bento__title">This Portfolio</h3>
-                              <p class="bento__desc">Hand-coded neural dashboard with Canvas particle physics,
-                                   glassmorphism UI, and zero dependencies — pure HTML5, CSS3, and JavaScript.</p>
+                              <h3 class="bento__title">Campus LLM Fine-Tuning</h3>
+                              <p class="bento__desc">Fine-tuned TinyLlama-1.1B on a curated UMass Q&amp;A dataset using
+                                   FP16 mixed precision and deployed via Gradio as a real-time browser-accessible
+                                   campus chatbot.</p>
                               <div class="bento__tags">
-                                   <span>HTML5</span><span>CSS3</span><span>Canvas API</span><span>Vanilla JS</span>
+                                   <span>Python</span><span>PyTorch</span><span>Hugging Face</span><span>Gradio</span>
                               </div>
                               <div class="bento__overlay">
                                    <h4>Technical Deep Dive</h4>
                                    <ul>
-                                        <li>Interactive neural network canvas with proximity-based edge rendering</li>
-                                        <li>Glassmorphism design system with CSS custom properties</li>
-                                        <li>IntersectionObserver-powered scroll animations and section tracking</li>
-                                        <li>Fully responsive bento grid with CSS Grid and zero JS frameworks</li>
+                                        <li>Fine-tuned TinyLlama-1.1B on a curated UMass Q&amp;A dataset using FP16
+                                             mixed-precision training</li>
+                                        <li>Deployed via Gradio as a real-time browser-accessible campus chatbot
+                                             requiring zero technical setup</li>
+                                        <li>Custom dataset curation for UMass-specific campus knowledge</li>
                                    </ul>
                                    <div class="bento__overlay-links">
                                         <a href="https://github.com/PalaashB" target="_blank" rel="noopener noreferrer"
