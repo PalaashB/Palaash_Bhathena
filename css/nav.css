@@ -1,8 +1,6 @@
-/* ================================================
-   Navigation — Glassmorphism Sticky Nav
-   ================================================ */
+/* Navigation styles */
 
-/* ── Header ────────────────────────────────────── */
+/* Header */
 #site-header {
     position: fixed;
     top: 0;
@@ -25,7 +23,7 @@
     transform: translateY(-100%);
 }
 
-/* ── Nav Container ─────────────────────────────── */
+/* Nav container */
 .nav {
     max-width: var(--max-width);
     margin: 0 auto;
@@ -41,7 +39,7 @@
     -webkit-backdrop-filter: blur(var(--glass-blur));
 }
 
-/* ── Logo ──────────────────────────────────────── */
+/* Logo */
 .nav__logo {
     display: flex;
     align-items: center;
@@ -69,7 +67,7 @@
     color: var(--text-primary);
 }
 
-/* ── Links ─────────────────────────────────────── */
+/* Links */
 .nav__links {
     display: flex;
     align-items: center;
@@ -106,7 +104,7 @@
     box-shadow: 0 0 8px var(--neon-cyan-glow);
 }
 
-/* ── CTA Link ──────────────────────────────────── */
+/* CTA link */
 .nav__link--cta {
     color: var(--bg-primary);
     background: var(--gradient-accent);
@@ -124,7 +122,7 @@
     box-shadow: var(--shadow-glow-cyan);
 }
 
-/* ── Hamburger ─────────────────────────────────── */
+/* Hamburger */
 .nav__hamburger {
     display: none;
     flex-direction: column;
@@ -152,7 +150,7 @@
         background var(--duration-normal) var(--ease-out);
 }
 
-/* Hamburger active → X */
+/* Hamburger active -> X */
 .nav__hamburger.active .nav__hamburger-line:nth-child(1) {
     transform: translateY(7px) rotate(45deg);
     background: var(--neon-cyan);
@@ -167,7 +165,7 @@
     background: var(--neon-cyan);
 }
 
-/* ── Mobile Nav ────────────────────────────────── */
+/* Mobile nav */
 @media (max-width: 768px) {
     .nav__hamburger {
         display: flex;

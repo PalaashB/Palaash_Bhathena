@@ -1,6 +1,4 @@
-/* ================================================
-   Experience Timeline
-   ================================================ */
+/* Experience timeline */
 
 .timeline {
     position: relative;
@@ -23,7 +21,7 @@
             transparent 100%);
 }
 
-/* ── Item ──────────────────────────────────────── */
+/* Item */
 .timeline__item {
     position: relative;
     margin-bottom: var(--space-2xl);
@@ -38,7 +36,7 @@
     transform: translateX(0);
 }
 
-/* ── Marker ────────────────────────────────────── */
+/* Marker */
 .timeline__marker {
     position: absolute;
     left: calc(-1 * var(--space-3xl) + 6px);
@@ -76,7 +74,7 @@
     background: var(--neon-violet);
 }
 
-/* ── Card ──────────────────────────────────────── */
+/* Card */
 .timeline__card {
     padding: var(--space-xl);
     border-radius: var(--radius-xl);
@@ -120,7 +118,7 @@
     background: var(--neon-violet-dim);
 }
 
-/* ── Details ───────────────────────────────────── */
+/* Details */
 .timeline__details {
     display: flex;
     flex-direction: column;
@@ -149,7 +147,7 @@
     font-weight: var(--fw-semibold);
 }
 
-/* ── Tags ──────────────────────────────────────── */
+/* Tags */
 .timeline__tags {
     display: flex;
     flex-wrap: wrap;
@@ -166,7 +164,7 @@
     border: 1px solid var(--glass-border);
 }
 
-/* ── Responsive ────────────────────────────────── */
+/* Responsive */
 @media (max-width: 600px) {
     .timeline {
         padding-left: var(--space-2xl);

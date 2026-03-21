@@ -1,8 +1,6 @@
-/* ================================================
-   Projects — Bento Grid + Overlays + Modal
-   ================================================ */
+/* Projects section */
 
-/* ── Bento Grid ────────────────────────────────── */
+/* Bento grid */
 .bento {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -11,7 +9,7 @@
     margin: 0 auto;
 }
 
-/* ── Card Base ─────────────────────────────────── */
+/* Card base */
 .bento__card {
     position: relative;
     border-radius: var(--radius-xl);
@@ -40,7 +38,7 @@
     flex-direction: column;
 }
 
-/* ── Icon ──────────────────────────────────────── */
+/* Icon */
 .bento__icon {
     width: 48px;
     height: 48px;
@@ -69,7 +67,7 @@
     box-shadow: var(--shadow-glow-violet);
 }
 
-/* ── Title & Desc ──────────────────────────────── */
+/* Title and description */
 .bento__title {
     font-size: var(--fs-xl);
     font-weight: var(--fw-bold);
@@ -84,7 +82,7 @@
     flex: 1;
 }
 
-/* ── Tags ──────────────────────────────────────── */
+/* Tags */
 .bento__tags {
     display: flex;
     flex-wrap: wrap;
@@ -107,7 +105,7 @@
     background: var(--neon-violet-dim);
 }
 
-/* ── Overlay (hover reveal) ────────────────────── */
+/* Overlay */
 .bento__overlay {
     position: absolute;
     inset: 0;
@@ -170,7 +168,7 @@
     color: var(--neon-cyan);
 }
 
-/* ── Overlay Links ─────────────────────────────── */
+/* Overlay links */
 .bento__overlay-links {
     display: flex;
     gap: var(--space-md);
@@ -193,7 +191,7 @@
     box-shadow: var(--shadow-glow-cyan);
 }
 
-/* ── Modal ─────────────────────────────────────── */
+/* Modal */
 .modal {
     position: fixed;
     inset: 0;
@@ -285,7 +283,7 @@
     color: var(--neon-cyan);
 }
 
-/* ── Responsive ────────────────────────────────── */
+/* Responsive */
 @media (max-width: 768px) {
     .bento {
         grid-template-columns: 1fr;

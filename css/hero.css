@@ -1,6 +1,4 @@
-/* ================================================
-   Hero Section — Neural Explorer Intro
-   ================================================ */
+/* Hero section */
 
 .hero {
     position: relative;
@@ -14,7 +12,7 @@
     overflow: hidden;
 }
 
-/* ── Badge ─────────────────────────────────────── */
+/* Badge */
 .hero__badge {
     display: inline-flex;
     align-items: center;
@@ -43,7 +41,7 @@
     letter-spacing: var(--ls-wide);
 }
 
-/* ── Title ─────────────────────────────────────── */
+/* Title */
 .hero__title {
     margin-bottom: var(--space-xl);
     animation: fadeInUp 0.8s var(--ease-out) 0.15s both;
@@ -66,7 +64,7 @@
     letter-spacing: var(--ls-wide);
 }
 
-/* ── Terminal ──────────────────────────────────── */
+/* Terminal */
 .hero__terminal {
     width: 100%;
     max-width: 520px;
@@ -139,7 +137,7 @@
     }
 }
 
-/* ── Description ───────────────────────────────── */
+/* Description */
 .hero__description {
     font-size: var(--fs-md);
     color: var(--text-secondary);
@@ -154,7 +152,7 @@
     font-weight: var(--fw-semibold);
 }
 
-/* ── Actions ───────────────────────────────────── */
+/* Actions */
 .hero__actions {
     display: flex;
     align-items: center;
@@ -209,7 +207,7 @@
     transform: translateY(-2px);
 }
 
-/* ── Stats ─────────────────────────────────────── */
+/* Stats */
 .hero__stats {
     display: flex;
     align-items: center;
@@ -251,7 +249,7 @@
     background: var(--glass-border);
 }
 
-/* ── Scroll Indicator ──────────────────────────── */
+/* Scroll indicator */
 .hero__scroll {
     position: absolute;
     bottom: var(--space-xl);

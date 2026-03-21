@@ -1,8 +1,6 @@
-/* ================================================
-   Main Stylesheet — The Semantic Explorer
-   ================================================ */
+/* Shared base styles */
 
-/* ── Base ───────────────────────────────────────── */
+/* Base */
 body {
     font-family: var(--font-sans);
     font-size: var(--fs-base);
@@ -14,7 +12,7 @@ body {
     position: relative;
 }
 
-/* ── Neural Canvas ─────────────────────────────── */
+/* Canvas background */
 #neural-canvas {
     position: fixed;
     top: 0;
@@ -25,13 +23,13 @@ body {
     pointer-events: none;
 }
 
-/* ── Main Content ──────────────────────────────── */
+/* Main content layer */
 #main-content {
     position: relative;
     z-index: var(--z-content);
 }
 
-/* ── Section Base ──────────────────────────────── */
+/* Section layout */
 .section {
     padding: var(--space-4xl) var(--space-lg);
     max-width: var(--max-width);
@@ -74,7 +72,7 @@ body {
     margin-right: auto;
 }
 
-/* ── Utility: Gradient Text ────────────────────── */
+/* Utility: gradient text */
 .gradient-text {
     background: var(--gradient-accent);
     -webkit-background-clip: text;
@@ -82,7 +80,7 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-/* ── Utility: Glass Panel ──────────────────────── */
+/* Utility: glass panel */
 .glass {
     background: var(--glass-bg);
     backdrop-filter: blur(var(--glass-blur));
@@ -90,7 +88,7 @@ body {
     border: 1px solid var(--glass-border);
 }
 
-/* ── Utility: Neon Border ──────────────────────── */
+/* Utility: neon border */
 .neon-border {
     border: 1px solid rgba(0, 240, 255, 0.12);
     transition: border-color var(--duration-normal) var(--ease-out),
@@ -102,7 +100,7 @@ body {
     box-shadow: var(--shadow-glow-cyan);
 }
 
-/* ── Utility: Screen-reader only ───────────────── */
+/* Utility: screen-reader only */
 .sr-only {
     position: absolute;
     width: 1px;
@@ -115,7 +113,7 @@ body {
     border-width: 0;
 }
 
-/* ── Selection ─────────────────────────────────── */
+/* Selection */
 ::selection {
     background: var(--neon-cyan-dim);
     color: var(--text-primary);
@@ -126,7 +124,7 @@ body {
     color: var(--text-primary);
 }
 
-/* ── Custom Scrollbar ──────────────────────────── */
+/* Custom scrollbar */
 ::-webkit-scrollbar {
     width: 8px;
 }

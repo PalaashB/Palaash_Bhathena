@@ -1,6 +1,4 @@
-/* ================================================
-   Footer — Responsive Grid Footer
-   ================================================ */
+/* Footer */
 
 .footer {
     position: relative;
@@ -16,14 +14,14 @@
     padding: var(--space-3xl) var(--space-lg) var(--space-xl);
 }
 
-/* ── Top Grid ──────────────────────────────────── */
+/* Top grid */
 .footer__top {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     gap: var(--space-3xl);
 }
 
-/* ── Brand ─────────────────────────────────────── */
+/* Brand */
 .footer__logo {
     display: inline-flex;
     align-items: center;
@@ -45,7 +43,7 @@
     max-width: 340px;
 }
 
-/* ── Headings ──────────────────────────────────── */
+/* Headings */
 .footer__heading {
     font-family: var(--font-mono);
     font-size: var(--fs-xs);
@@ -56,7 +54,7 @@
     margin-bottom: var(--space-md);
 }
 
-/* ── Links ─────────────────────────────────────── */
+/* Links */
 .footer__links {
     display: flex;
     flex-direction: column;
@@ -75,7 +73,7 @@
     padding-left: var(--space-2xs);
 }
 
-/* ── Divider ───────────────────────────────────── */
+/* Divider */
 .footer__divider {
     height: 1px;
     background: linear-gradient(90deg,
@@ -87,7 +85,7 @@
     margin: var(--space-2xl) 0 var(--space-lg);
 }
 
-/* ── Bottom Row ────────────────────────────────── */
+/* Bottom row */
 .footer__bottom {
     display: flex;
     align-items: center;
@@ -132,7 +130,7 @@
     }
 }
 
-/* ── Responsive ────────────────────────────────── */
+/* Responsive */
 @media (max-width: 768px) {
     .footer__top {
         grid-template-columns: 1fr;

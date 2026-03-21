@@ -1,6 +1,4 @@
-/* ================================================
-   Skills Matrix
-   ================================================ */
+/* Skills section */
 
 .skills {
     display: flex;
@@ -10,7 +8,7 @@
     margin: 0 auto;
 }
 
-/* ── Group ─────────────────────────────────────── */
+/* Group */
 .skills__group {
     opacity: 0;
     transform: translateY(24px);
@@ -35,14 +33,14 @@
     border-bottom: 1px solid var(--glass-border);
 }
 
-/* ── Grid ──────────────────────────────────────── */
+/* Grid */
 .skills__grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
     gap: var(--space-sm);
 }
 
-/* ── Item ──────────────────────────────────────── */
+/* Item */
 .skills__item {
     display: flex;
     flex-direction: column;
@@ -73,13 +71,13 @@
     color: var(--text-muted);
 }
 
-/* Cert variant */
+/* Certification card */
 .skills__item--cert {
     grid-column: span 2;
     background: var(--gradient-glow);
 }
 
-/* ── Responsive ────────────────────────────────── */
+/* Responsive */
 @media (max-width: 600px) {
     .skills__grid {
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));

@@ -1,13 +1,8 @@
-/* ================================================
-   Main JS — The Semantic Explorer
-   ================================================
-   Complete portfolio logic: Navigation, Typing Animation,
-   Neural Canvas, Scroll Animations, Modals, and Polish.
-   ================================================ */
+/* Main site interactions */
 
 'use strict';
 
-/* ── DOM Ready ─────────────────────────────────── */
+/* Run once DOM is ready */
 function onReady(fn) {
   if (document.readyState !== 'loading') fn();
   else document.addEventListener('DOMContentLoaded', fn);
@@ -26,9 +21,7 @@ onReady(() => {
   initProjectInteractivity();
 });
 
-/* ================================================
-   1. Navigation
-   ================================================ */
+/* Navigation */
 function initNavigation() {
   const header = document.getElementById('site-header');
   const hamburger = document.getElementById('nav-hamburger');
@@ -37,7 +30,7 @@ function initNavigation() {
 
   if (!header || !hamburger || !navLinks) return;
 
-  // Hamburger Toggle
+  // Toggle mobile menu
   hamburger.addEventListener('click', () => {
     const isOpen = navLinks.classList.toggle('open');
     hamburger.classList.toggle('active');
@@ -45,7 +38,7 @@ function initNavigation() {
     document.body.style.overflow = isOpen ? 'hidden' : '';
   });
 
-  // Close mobile menu on link click
+  // Close menu after selecting a link
   links.forEach(link => {
     link.addEventListener('click', () => {
       navLinks.classList.remove('open');
@@ -55,7 +48,7 @@ function initNavigation() {
     });
   });
 
-  // Scroll: Show/Hide + Backdrop
+  // Hide header while scrolling down, show when scrolling up
   let lastScrollY = 0;
   let ticking = false;
 
@@ -75,7 +68,7 @@ function initNavigation() {
     if (!ticking) { requestAnimationFrame(onScroll); ticking = true; }
   }, { passive: true });
 
-  // Active Section Tracking
+  // Keep nav link in sync with visible section
   const sections = document.querySelectorAll('section[id]');
   if (sections.length > 0) {
     const observer = new IntersectionObserver(
@@ -95,9 +88,7 @@ function initNavigation() {
   }
 }
 
-/* ================================================
-   2. Terminal Typing Animation
-   ================================================ */
+/* Typing effect in hero terminal */
 function initTypingAnimation() {
   const textEl = document.getElementById('typing-text');
   if (!textEl) return;
@@ -140,9 +131,7 @@ function initTypingAnimation() {
   setTimeout(tick, 1200);
 }
 
-/* ================================================
-   3. Neural Network Canvas
-   ================================================ */
+/* Background particle canvas */
 function initNeuralCanvas() {
   const canvas = document.getElementById('neural-canvas');
   if (!canvas) return;
@@ -202,7 +191,7 @@ function initNeuralCanvas() {
         const dist = Math.sqrt(dx * dx + dy * dy);
 
         if (dist < CONNECT_DIST) {
-          // Check if either particle is near the mouse
+          // Highlight lines near the cursor
           const d1 = Math.sqrt(
             (particles[i].x - mouse.x) ** 2 + (particles[i].y - mouse.y) ** 2
           );
@@ -253,7 +242,7 @@ function initNeuralCanvas() {
     requestAnimationFrame(animate);
   }
 
-  // Events
+  // Input listeners
   window.addEventListener('resize', () => {
     resize();
     createParticles();
@@ -269,7 +258,7 @@ function initNeuralCanvas() {
     mouse.y = -9999;
   });
 
-  // Handle touch for mobile
+  // Touch support
   window.addEventListener('touchmove', (e) => {
     if (e.touches.length > 0) {
       mouse.x = e.touches[0].clientX;
@@ -282,15 +271,13 @@ function initNeuralCanvas() {
     mouse.y = -9999;
   });
 
-  // Init
+  // Start animation
   resize();
   createParticles();
   animate();
 }
 
-/* ================================================
-   4. Scroll Animations (IntersectionObserver)
-   ================================================ */
+/* Reveal animations on scroll */
 function initScrollAnimations() {
   const animatedEls = document.querySelectorAll('[data-animate]');
   if (animatedEls.length === 0) return;
@@ -313,9 +300,7 @@ function initScrollAnimations() {
   });
 }
 
-/* ================================================
-   5. Project Interactivity (Overlay + Modal)
-   ================================================ */
+/* Project cards and modal */
 function initProjectInteractivity() {
   const cards = document.querySelectorAll('.bento__card');
   const modal = document.getElementById('project-modal');
@@ -325,13 +310,13 @@ function initProjectInteractivity() {
 
   if (!modal || !modalBody) return;
 
-  // Toggle overlay on touch devices
+  // Card click behavior
   cards.forEach(card => {
     card.addEventListener('click', (e) => {
-      // If clicking a link inside overlay, let it through
+      // Let CTA links behave normally
       if (e.target.closest('.bento__overlay-btn')) return;
 
-      // On smaller screens, open modal instead
+      // Use modal on smaller screens
       if (window.innerWidth <= 768) {
         const overlay = card.querySelector('.bento__overlay');
         if (overlay) {
@@ -339,7 +324,7 @@ function initProjectInteractivity() {
           openModal();
         }
       } else {
-        // Toggle active class for non-hover devices
+        // Desktop/touch fallback: toggle active card
         cards.forEach(c => { if (c !== card) c.classList.remove('active'); });
         card.classList.toggle('active');
       }
